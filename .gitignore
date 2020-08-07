@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+Practice.ipynb
+.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
