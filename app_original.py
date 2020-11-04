@@ -1,13 +1,12 @@
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
-import os
+from flask_pymongo import PyMongo
 import scraping
 
 app = Flask(__name__)
 
 # Use flask_pymongo to set up mongo connection
-app.config["DATABASE_URL"] = "postgres://ttsskopxdmnsfo:4378043c6d59d120e32dd53458a7b496edba8ae3199207429f3709d03c59db82@ec2-52-203-165-126.compute-1.amazonaws.com:5432/d4arif9evev4vq"
-mongo = SQLAlchemy(app)
+app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_app"
+mongo = PyMongo(app)
 
 @app.route("/")
 def index():

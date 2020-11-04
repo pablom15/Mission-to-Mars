@@ -12,6 +12,9 @@ flask-pymongo = "*"
 splinter = "*"
 bs4 = "*"
 pandas = "*"
+psycopg2 = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
 
 [requires]
 python_version = "3.7"
